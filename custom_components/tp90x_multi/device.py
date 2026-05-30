@@ -13,7 +13,7 @@ from homeassistant.exceptions import HomeAssistantError
 from homeassistant.helpers.device_registry import CONNECTION_BLUETOOTH, DeviceInfo
 from homeassistant.helpers.entity import Entity
 
-from .tp90x import AlarmMode, TP902, TP904
+from .tp90x import AlarmMode, TP902, TP904, TP920
 from .tp90x.tp90xbase import _build_packet, _encode_temp_bcd
 
 _LOGGER = logging.getLogger(__name__)
@@ -23,6 +23,7 @@ TP90X_SERVICE_UUID = TP902.SERVICE_UUID
 MODEL_MAP = {
     "TP902": TP902,
     "TP904": TP904,
+    "TP920": TP920,
 }
 
 
@@ -47,7 +48,7 @@ class TP90xDevice:
         self.alarms: int | None = None
         self.beeper: bool | None = None
 
-        self.supports_alarm_config = self.model == "TP902"
+        self.supports_alarm_config = self.model in ("TP902", "TP920")
         self.alarm_probe_count = 2 if self.supports_alarm_config else 0
         self.alarm_configs: dict[int, dict[str, float | int | None]] = {
             i: {"mode": None, "min": None, "max": None}
