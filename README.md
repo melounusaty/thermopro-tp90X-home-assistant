@@ -1,4 +1,4 @@
-# ThermoPro TP90X Home Assistant Custom Integration
+# ThermoPro TP90X and TP920 Home Assistant Custom Integration
 [![version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmelounusaty%2Fthermopro-tp90X-home-assistant%2Fmain%2Fcustom_components%2Ftp90x_multi%2Fmanifest.json&query=%24.version&label=version&color=slateblue)](https://github.com/melounusaty/thermopro-tp90X-home-assistant/releases/latest)
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?logo=homeassistantcommunitystore&logoColor=white)](https://github.com/hacs/integration)
 
