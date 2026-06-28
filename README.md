@@ -143,6 +143,7 @@ Before adding the device, make sure the thermometer is powered on, close to a Bl
 6. Select the device model:
    - `TP902`
    - `TP904 (experimental)`
+   - `TP920`
 7. Finish the setup flow.
 
 The integration stores the MAC address as the unique identifier for the config entry, which is the recommended pattern for local Bluetooth devices.
@@ -153,7 +154,7 @@ This integration uses the following naming pattern:
 
 - **Integration name**: `ThermoPro TP90X`
 - **Device manufacturer**: `ThermoPro`
-- **Device model**: `TP902` or `TP904`
+- **Device model**: `TP902` or `TP904` or `TP920`
 - **Device name**: your chosen friendly name, for example `Kitchen Thermometer`
 
 This keeps the integration name friendly while still showing the real hardware model on the device page.
@@ -163,6 +164,22 @@ This keeps the integration name friendly while still showing the real hardware m
 If setup succeeds, Home Assistant should create one ThermoPro device with grouped entities because the integration provides shared `device_info`, Bluetooth connections, and stable unique IDs for the entities.
 
 ### Typical TP902 result
+
+- Probe 1
+- Probe 2
+- Units
+- Alarm sound
+- Probe 1 alarm
+- Probe 1 Min
+- Probe 1 Max
+- Probe 2 alarm
+- Probe 2 Min
+- Probe 2 Max
+- Battery
+- Alarm Snooze
+- Backlight
+
+### Typical TP920 result
 
 - Probe 1
 - Probe 2
