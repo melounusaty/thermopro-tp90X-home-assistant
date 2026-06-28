@@ -10,6 +10,7 @@ DOMAIN = "tp90x_multi"
 MODEL_OPTIONS = {
     "TP902": "TP902",
     "TP904 (experimental)": "TP904",
+    "TP920": "TP920",
 }
 
 

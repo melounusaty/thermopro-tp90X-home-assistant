@@ -3,6 +3,7 @@
 from .enums import AlarmMode, SearchMode
 from .tp902 import TP902
 from .tp904 import TP904
+from .tp920 import TP920
 from .tp90xbase import (
     AlarmConfig,
     AuthResponse,
@@ -16,6 +17,7 @@ from .tp90xbase import (
 __all__ = [
     "TP902",
     "TP904",
+    "TP920",
     "AlarmMode",
     "SearchMode",
     "Temperature",
