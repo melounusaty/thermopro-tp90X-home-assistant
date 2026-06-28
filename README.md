@@ -8,6 +8,7 @@ It currently supports:
 
 - **TP902** — fully supported.
 - **TP904** — experimental support.
+- **TP902** — fully supported thanks to @wleonhardt
 
 The integration uses a Home Assistant config entry, Bluetooth support, and sensor entities for the active probe channels exposed by the selected model.
 
@@ -58,6 +59,24 @@ For **TP904**, the integration currently provides:
 
 TP904 alarm configuration is currently treated as **experimental** and is not exposed with the same min/max controls used by TP902, because the TP904 library indicates that parts of its settings behavior differ from the TP902 implementation.
 
+### TP920
+
+For **TP902**, the integration provides:
+
+- `Probe 1` — temperature sensor.
+- `Probe 2` — temperature sensor.
+- `Battery` — diagnostic battery sensor.
+- `Units` — select entity for Celsius / Fahrenheit.
+- `Alarm sound` — switch entity.
+- `Probe 1 alarm` — switch entity.
+- `Probe 1 Min` — number entity.
+- `Probe 1 Max` — number entity.
+- `Probe 2 alarm` — switch entity.
+- `Probe 2 Min` — number entity.
+- `Probe 2 Max` — number entity.
+- `Alarm snooze` — button entity to silence an active alarm until the next trigger.
+- `Backlight` — button entity to briefly light the display.
+
 ## Folder contents
 
 Place the integration in this path inside your Home Assistant config directory:
@@ -85,6 +104,7 @@ config/
             ├── enums.py
             ├── tp902.py
             ├── tp904.py
+            ├── tp920.py
             └── tp90xbase.py
 ```
 
