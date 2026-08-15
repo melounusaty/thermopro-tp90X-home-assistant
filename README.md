@@ -8,7 +8,7 @@ It currently supports:
 
 - **TP902** — fully supported.
 - **TP904** — experimental support.
-- **TP902** — fully supported thanks to @wleonhardt
+- **TP920** — fully supported thanks to [@wleonhardt](https://github.com/wleonhardt)
 
 The integration uses a Home Assistant config entry, Bluetooth support, and sensor entities for the active probe channels exposed by the selected model.
 
